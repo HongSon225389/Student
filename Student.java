@@ -48,7 +48,8 @@ public double Tinhluong(){
     return heSoLuong*luongCoBan;
 }
 public boolean tangluong(double n){
-    
+    if(luongCoBan*(heSoLuong+n)>LUONGMAX) return false;
+    else heSoLuong+=n; return true;
 }
 public void inTTin(){
     System.out.println("----------------");
@@ -73,6 +74,8 @@ public static void main(String[] args) {
     st.setHeSoLuong(sc.nextDouble());
     System.out.print("Nhap luong max : ");
     st.setLUONGMAX(sc.nextDouble());
+    System.out.print("Nhap he so tang luong : ");
+    st.tangluong(sc.nextDouble());
     st.inTTin();
 }
 }
