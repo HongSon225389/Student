@@ -6,6 +6,7 @@ private String nganh;
 private int mssv;
 private double luongCoBan;
 private double heSoLuong;
+private double LUONGMAX;
 
 public void sethoVaTen(String name){
     this.hoVaten = name;
@@ -28,6 +29,12 @@ public int getmssv(){
 public void setluongCoBan(double luong){
     this.luongCoBan = luong;
 }
+public void setLUONGMAX(double luongmax){
+    this.LUONGMAX = luongmax;
+}
+public double getLUONGMAX(){
+    return this.LUONGMAX;
+}
 public double getLuongCoBan(){
     return this.luongCoBan;
 }
@@ -39,6 +46,9 @@ public double getHeSoLuong(){
 }
 public double Tinhluong(){
     return heSoLuong*luongCoBan;
+}
+public boolean tangluong(double n){
+    
 }
 public void inTTin(){
     System.out.println("----------------");
@@ -61,6 +71,8 @@ public static void main(String[] args) {
     st.setluongCoBan(sc.nextDouble());
     System.out.print("Nhap he so luong : ");
     st.setHeSoLuong(sc.nextDouble());
+    System.out.print("Nhap luong max : ");
+    st.setLUONGMAX(sc.nextDouble());
     st.inTTin();
 }
 }
