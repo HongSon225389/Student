@@ -57,7 +57,7 @@ public void inTTin(){
     System.out.println("Nganh hoc : "+nganh);
     System.out.println("Ma so sinh vien : "+mssv);
     System.out.println("Luong nhan duoc thuc te : "+Tinhluong());
-
+//hello
 }
 public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
@@ -76,6 +76,7 @@ public static void main(String[] args) {
     st.setLUONGMAX(sc.nextDouble());
     System.out.print("Nhap he so tang luong : ");
     st.tangluong(sc.nextDouble());
+    System.out.println("Tuan dan");
     st.inTTin();
 }
 }
