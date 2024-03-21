@@ -23,17 +23,22 @@ public void setmssv(int mssv){
 public int getmssv(){
     return this.mssv;
 }
+
+public void inTTin(){
+    System.out.println("----------------");
+    System.out.println("Ho va ten : "+hoVaten);
+    System.out.println("Nganh hoc : "+nganh);
+    System.out.println("Ma so sinh vien : "+mssv);
+}
 public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     Student st = new Student();
-    System.out.println("Nhap ho va ten : ");
+    System.out.print("Nhap ho va ten : ");
     st.sethoVaTen(sc.nextLine());
-    System.out.println("Nhap nganh hoc : ");
+    System.out.print("Nhap nganh hoc : ");
     st.setnganh(sc.nextLine());
-    System.out.println("Nhap ma so sinh vien : ");
+    System.out.print("Nhap ma so sinh vien : ");
     st.setmssv(sc.nextInt());
-}
-public void inTTi(){
-    
+    st.inTTin();
 }
 }
