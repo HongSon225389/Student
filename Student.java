@@ -78,5 +78,7 @@ public static void main(String[] args) {
     st.tangluong(sc.nextDouble());
     System.out.println("Tuan dan");
     st.inTTin();
+    system outdsgfs
+    èoyfesoysi
 }
 }
